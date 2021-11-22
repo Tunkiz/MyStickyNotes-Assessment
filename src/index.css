@@ -31,6 +31,7 @@ code {
 	min-height: 100vh;
 }
 
+
 .notes-list {
 	display: grid;
 	grid-gap: 1rem;
