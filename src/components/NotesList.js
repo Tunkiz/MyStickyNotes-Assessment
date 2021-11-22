@@ -4,7 +4,6 @@ import AddNote from './AddNote';
 const NotesList = ({
 	notes,
 	handleAddNote,
-	my,
 	handleDeleteNote,
 }) => {
 	return (
@@ -24,5 +23,4 @@ const NotesList = ({
 		</div>
 	);
 };
-
 export default NotesList;

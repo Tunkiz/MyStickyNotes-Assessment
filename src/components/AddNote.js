@@ -27,11 +27,10 @@ const AddNote = ({ handleAddNote,my}) => {
 			setComplete(event.target.value);
 		}
 	};
-
-	const handleSaveClick = () => {
+const handleSaveClick = () => {
 		if (assignee.trim().length > 0 && priority.trim().length > 0
-		 && Task.trim().length > 0 &&(Complete.trim().length == 0 || Complete ==='x')) {
-			window.location.reload(true)
+		 && Task.trim().length > 0 &&(Complete.trim().length === 0 || Complete ==='x')) {
+			window.location.reload(true);
 			handleAddNote(assignee,priority,Task,Complete);
 			setNoteText('');
 			setPriority('');
@@ -44,16 +43,18 @@ const AddNote = ({ handleAddNote,my}) => {
 	function clickBody() {
 		document.getElementById('hide').style.display = 'block';
 	}
-	document.body.addEventListener("click", clickBody)
+	document.body.addEventListener("click", clickBody);
 	
 	return (
-		<div style ={{display:'none'}} id='hide' className='note new'>
+		<div  id='hide' className='note new'>
+			
 			<form>
 			<label id ='mydata'>Assignee:</label><input
 				type='text'
+				
 				value={assignee}
 				onChange={handleChange}
-			></input>
+				></input>
 			<hr/>
 			<label id ='mydata'>Priority:</label><input
 				type='text'

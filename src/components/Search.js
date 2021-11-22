@@ -10,10 +10,9 @@ const Search = ({ handleSearchNote }) => {
 					handleSearchNote(event.target.value)
 				}
 				type='text'
-				placeholder='type to search...'
+				placeholder='Type to search...'
 			/>
 		</div>
 	);
 };
-
 export default Search;
