@@ -1,0 +1,9 @@
+I was unable to set the notes to able to be editable
+-The steps that i would take would be setting the notes entities to be editable and updating the entities of the notes in the database,
+so when the page refreshes the edited entities stays the same.
+
+I was unable to add a click anywhere on the scream function to add a sticky note at that position
+-Getting the mouse positin(x,y) by using onmousedown and using it on the padding of the notes div element will place the note at the position of the mouse.
+-The sticky note must be stored together with it postion(x,y)
+
+
